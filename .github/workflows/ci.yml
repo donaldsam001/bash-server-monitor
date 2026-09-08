@@ -27,9 +27,9 @@ jobs:
 
       - name: Run ShellCheck
         run: |
-          shellcheck bin/*.sh
-          shellcheck lib/*.sh
-          shellcheck tests/*.sh
+          shellcheck -x bin/*.sh
+          shellcheck -x lib/*.sh
+          shellcheck -x tests/*.sh
 
   test:
     name: Tests
